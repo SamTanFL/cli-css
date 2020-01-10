@@ -19,7 +19,7 @@ switch (process.argv[2]) {
         r = rgb.r;
         g = rgb.g;
         b = rgb.b;
-        console.log(`\x1b[38;2;${r};${g};${b}m%s\x1b[0m`, "Colored");
+        console.log(`\x1b[38;2;${r};${g};${b}m%s\x1b[0m`, "Hello");
 
     break;
     case "rgb":
