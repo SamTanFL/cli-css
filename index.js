@@ -24,9 +24,9 @@ switch (process.argv[2]) {
     break;
     case "rgb":
         rgb = [parseInt(process.argv[3]), parseInt(process.argv[4]), parseInt(process.argv[5])];
-        r = rgb.r;
-        g = rgb.g;
-        b = rgb.b;
+        r = rgb[0];
+        g = rgb[1];
+        b = rgb[2];
         console.log(`\x1b[38;2;${r};${g};${b}m%s\x1b[0m`, "Colored");
         hex = rgbToHex(parseInt(process.argv[3]), parseInt(process.argv[4]), parseInt(process.argv[5]));
         hsl = rgbToHSL(rgb[0], rgb[1], rgb[2]);
