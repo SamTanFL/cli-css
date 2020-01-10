@@ -19,7 +19,7 @@ switch (process.argv[2]) {
         r = rgb.r;
         g = rgb.g;
         b = rgb.b;
-        console.log(`\x1b[38;2;${r};${g};${b}m%s\x1b[0m`, rgb.r+rgb.b+rgb.b);
+        console.log(`\x1b[38;2;${r};${g};${b}m%s\x1b[0m`, "Colored");
 
     break;
     case "rgb":
@@ -27,7 +27,7 @@ switch (process.argv[2]) {
         r = rgb.r;
         g = rgb.g;
         b = rgb.b;
-        console.log(`\x1b[38;2;${r};${g};${b}m%s\x1b[0m`, rgb.r+rgb.b+rgb.b);
+        console.log(`\x1b[38;2;${r};${g};${b}m%s\x1b[0m`, "Colored");
         hex = rgbToHex(parseInt(process.argv[3]), parseInt(process.argv[4]), parseInt(process.argv[5]));
         hsl = rgbToHSL(rgb[0], rgb[1], rgb[2]);
         console.log(hex);
